@@ -14,6 +14,8 @@ export default function PreviewModal({ isOpen, onClose }: PreviewModalProps) {
 	const [svgString, setSvgString] = useState("");
 	const [renderSvg, setRenderSvg] = useState("");
 
+	console.log("log");
+
 	// Close on Escape
 	useEffect(() => {
 		if (!isOpen) return;
